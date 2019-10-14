@@ -1,0 +1,8 @@
+*.so
+*.o
+tags
+test/mutate
+test/mutate_dir
+test/mutate_multi
+test/mutate_file
+test/mutate_stdin
