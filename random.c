@@ -20,7 +20,7 @@ static inline uint64_t rotl(const uint64_t x, int k) {
 }
 
 void init_seed(){
-   lm_debug("seeding from /dev/urandom\n");
+    lm_debug("seeding from /dev/urandom\n");
     int fd = open("/dev/urandom", O_RDONLY | O_CLOEXEC);
     if (fd == -1) {
         fatal("Couldn't open /dev/urandom for reading");
@@ -33,7 +33,7 @@ void init_seed(){
 }
 
 void manual_seed(unsigned int seed){
-   lm_debug("manually seeding with %u\n", seed);
+    lm_debug("manually seeding with %u\n", seed);
     srand(seed);
     int r1 = rand();
     int r2 = rand();
